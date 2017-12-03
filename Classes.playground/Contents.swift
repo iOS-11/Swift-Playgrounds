@@ -29,17 +29,17 @@ class Bank {
 let philBank = Bank(firstName: "Phil", lastName: "Jhonson", currentBalance: 300.0)
 print(philBank.currentBalance)
 
-// Deposit Money ✅
+// Deposit Money: ✅
 philBank.deposit(amount: 50.0)
 print(philBank.currentBalance)
 
-// Withdraw Money ✅
+// Withdraw Money: ✅
 philBank.withdraw(amount: 185.0)
 print(philBank.currentBalance)
 
 print("Phil currently has $\(philBank.currentBalance) left in his bank account")
 
-// Check if withdraw amount is greater than balance ✅
+// Don't withdraw money if withdraw amount is greater than account balance: ✅
 philBank.withdraw(amount: 200.0)
 print(philBank.currentBalance)
 
